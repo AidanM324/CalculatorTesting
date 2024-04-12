@@ -19,4 +19,16 @@ public class CalculatorTest {
         newCalc = new Calculator();
         assertEquals(4, newCalc.subtract(9,5));
     }
+    @Test
+    void testDivide()
+    {
+        newCalc = new Calculator();
+        assertEquals(10, newCalc.divide(30,3));
+    }
+    @Test
+    void testMultiply()
+    {
+        newCalc = new Calculator();
+        assertEquals(30, newCalc.multiply(10,3));
+    }
 }
