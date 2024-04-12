@@ -2,10 +2,10 @@ package ie.atu.week10;
 
 public class CalculatorTest {
     Calculator newCalc;
-
+    @Test
     void testAdd()
     {
         newCalc = new Calculator();
-        int result = newCalc.add(4,6);
+        assertEquals(10, newCalc.add(4,6));
     }
 }
